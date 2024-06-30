@@ -1,24 +1,25 @@
-# rss-antenna
+# RSS アンテナ
 
-TODO: 書く
+簡単にアンテナサイトを作れるやつ
 
-Cloudflare Pages対応です
+## 使い方
 
-多分
+0. Cloudflare アカウント又は Cloudflare Pages, Page Functions, Cron に互換性のある環境が必要です
 
-```ts
-import { Hono } from "hono"
-import { antenna, scheduled } from "rss-antenna"
-const app = new Hono()
+1. このレポジトリをテンプレートとして使用します
 
-app.route("/", antenna({
-  title: "アンテナ名",
-}))
+2. 依存関係をインストールします
+`npm install`
 
-export default {
-  fetch: app.fetch,
-  scheduled,
-}
-```
+3. 設定を行います
 
-みたいな感じで動くように作ります
+4. ビルドを行います
+`npm run build`
+
+5. `./dist/` に成果物が出力されますからデプロイします
+
+6. Cronを設定します
+
+## Memo
+
+https://zenn.dev/toraco/articles/55f359cbf94862
