@@ -1,0 +1,12 @@
+{
+  "name": "rss-antenna",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "hono": "^4.4.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
+}
